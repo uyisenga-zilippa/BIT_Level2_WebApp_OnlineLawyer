@@ -1,0 +1,291 @@
+<?php
+//connting to database
+include "connection.php";
+
+//make query for displaying schools
+$query = "SELECT * FROM `lawyers` WHERE `status`='active'";
+$data = mysqli_query($connect, "$query");
+
+
+?>
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>About | ...</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <!--  <div id="preloder">
+        <div class="loader"></div>
+    </div> -->
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+
+
+        <div class="humberger__menu__widget">
+
+            <div class="header__top__right__auth">
+                <a href="login.php"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="lawyers.php">Lawyers</a></li>
+                <li class="active"><a href="./about.html">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="lawyerLogin.html">Login As Lawyer</a></li>
+                <li><a href="login.php">Login As Client</a></li>
+
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> info@onlinelawyer.rw</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top" style="background:black;color:white ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li style="color: white;"><i class="fa fa-envelope"></i> info@onlinelawyer.rw</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+
+                            </div>
+
+                            <div class="header__top__right__auth">
+                                <a href="login.php"><i class="fa fa-user"></i> Login as client</a>
+                            </div>
+                            &nbsp;&nbsp;
+                            &nbsp; <div class="header__top__right__auth">
+                                <a href="lawyerLogin.html"><i class="fa fa-user"></i> Login as lawyer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><br>
+            <h1 class="text-center title_text"><b>Online Lawyers Services M.I.S</b></h1>
+        </div><br>
+        <div class="div_header mb-2" style="height: 70px;background:#008ae6;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="header__logo">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <nav class="header__menu">
+                            <ul style="text-transform:capitalize;">
+                                <li class="active" style="color: white"><a href="index.php"
+                                        style="color: white">Home</a></li>
+                                <li><a href="lawyers.php" style="color: white">Lawyers</a></li>
+                                <li><a href="./about.html" style="color: white">About Us</a></li>
+                                <li><a href="contact.php" style="color: white">Contact Us</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="humberger__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="section-title">
+                        <h2 class="text-justify"><b>About Us ...</b></h2>
+                    </div>
+
+                </div>
+                <section style="background-color: rgb(0, 0, 0);">
+                    <div class="row">
+                        <div class="col-md-6" style=" padding-left: -8cm; ">
+                            <div
+                                style="background-image: url(); background-repeat: no-repeat; background-size: cover;height: 10cm; padding-left: -8cm; ">
+                                <img src="img/8.JPG" alt="" style="height: 100%; width:100%  ">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" style=" padding-left: 1cm; padding-right: 1.7cm; ">
+                            <l class="text-justify" style="color: white;"> During many years ago until now many
+                                institutions
+                                and organizations are still serving as they did many years ago, while others which
+                                understands
+                                the impact of ICT are migrating from manual to computerized system.
+                                Lawyersin Rwanda are often overloaded with the huge amount of paper they need to process
+                                each
+                                time they want to search for a client's case or any other data that could be useful
+                                in their work. This is mainly due to the fact that most of them tend to manage their
+                                work in a
+                                Traditional way which prevents them from being efficient and organized in their work.
+                                The lawyers' job requires processing a large quantity of folders and documents related
+                                to
+                                clients' cases. These documents tend to be of an outmost importance and any loss can
+                                lead to
+                                bad consequences such as delays of court sessions and thus clients' dissatisfaction. Due
+                                to this
+                                problem and also to the big number of clients and cases, we have decided to come up with
+                                an
+                                automated way to manage the heavy work of Rwandan lawyers.
+
+                                .</l>
+                        </div>
+                    </div>
+
+            </div>
+    </section>
+
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <section style="background-color: rgb(0, 0, 0);">
+                    <div class="row">
+                        <div class="col-md-6" style=" padding-left: -8cm; ">
+                            <div
+                                style="background-image: url(); background-repeat: no-repeat; background-size: cover;height: 10cm; padding-left: -8cm; ">
+                                <img src="img/9.JPG" alt="" style="height: 100%; width:100%  ">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" style=" padding-left: 1cm; padding-right: 1.7cm; ">
+                            <p class="text-justify" style="color: white;">OUR VISION<br>
+                                To be a vibrant and independent Lawyers committed to justice and the
+                                rule of law by enhancing the legal profession to regional, international best standards
+                                and advancing the human rights knowledge and awareness of the profession.<br><br>
+                                OUR MISSION<br>
+                                To gather all the members of the Lawyers to promote and protect the interests of
+                                the legal profession and the public in the administration of justice by preserving the
+                                integrity of the profession through regulation and supporting professional development,
+                                and by helping to shape the law and advancing respect for the rule of law and human
+                                rights.</p>
+                        </div>
+                    </div>
+
+            </div>
+    </section><br>
+    <footer class="footer spad" style="background-color: #008ae6;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                        </div>
+                        <ul>
+                            <li>Address: kn 204 kigali</li>
+                            <li>Phone: +250780591269</li>
+                            <li>Email: info@onlinelawyer.rw</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+
+                            <li><a href="lawyers.php">Lawyer</a></li>
+
+                        </ul>
+                        <ul>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+
+
+                        <div class="footer__widget__social">
+                            <a href="#" style="background:black;color:white"><i class="fa fa-facebook"></i></a>
+                            <a href="#" style="background: black;color:white"><i class="fa fa-instagram"></i></a>
+                            <a href="#" style="background: black;color:white"><i class="fa fa-twitter"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright text-center">
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved <b>
+
+                        </b>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
